@@ -26,14 +26,14 @@ public class Test {
 		// - addAll(int index, Collection c):boolean  
 
 		// - Integer 객체 추가
-		Collection<Integer> list = new Vector<>();
-		list.add(1); list.add(2); list.add(1); 
-		System.out.println(list);
-		
-		System.out.println(list.add(3)); 
-		System.out.println(list);
-		list.add(777);                
-		System.out.println(list);    
+//		Collection<Integer> list = new Vector<>();
+//		list.add(1); list.add(2); list.add(1); 
+//		System.out.println(list);
+//		
+//		System.out.println(list.add(3)); 
+//		System.out.println(list);
+//		list.add(777);                
+//		System.out.println(list);    
 		
 		// - String 객체 추가
 //		List<String> list = new ArrayList<>();
@@ -46,19 +46,19 @@ public class Test {
 //		System.out.println(list);
 		
 		// - Student 객체 추가		
-//		List<Student> list = new ArrayList<>();
-//		list.add(new Student(1, "성구"));
-//		list.add(new Student(2, "경미"));
-//		list.add(new Student(3, "길동")); 
-//		System.out.println(list);
-//		
-//		List<Student> add_list = new ArrayList<>();
-//		add_list.add(new Student(4, "lee"));
-//		add_list.add(new Student(5, "kim"));
-//		System.out.println(list.addAll(add_list));     
-//		System.out.println(list);
-//		System.out.println(list.addAll(2, add_list));   
-//		System.out.println(list);
+		List<Student> list = new ArrayList<>();
+		list.add(new Student(1, "성구"));
+		list.add(new Student(2, "경미"));
+		list.add(new Student(3, "길동")); 
+		System.out.println(list);
+		
+		List<Student> add_list = new ArrayList<>();
+		add_list.add(new Student(4, "lee"));
+		add_list.add(new Student(5, "kim"));
+		System.out.println(list.addAll(add_list));     
+		System.out.println(list);
+		System.out.println(list.addAll(2, add_list));   
+		System.out.println(list);
 		
 		// 객체 수정(Update)
 		// - set(int index, E element):E
