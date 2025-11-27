@@ -14,6 +14,26 @@ import ch08_Collection프레임워크.common.Student;
 public class Test {
 
 	public static void main(String[] args) {
-		// HashSet 참조
+		Set<Student> set = new TreeSet<>();
+		set.add(new Student(1, "성구"));
+		set.add(new Student(2, "경미"));
+		set.add(new Student(3, "성구")); 
+		System.out.println(set);
+		
+		List<Student> add_list = new ArrayList<>();
+		add_list.add(new Student(4, "lee"));
+		add_list.add(new Student(1, "kim"));
+		set.addAll(add_list);     
+		//System.out.println(set.addAll(2, add_list)); // Set에서 인덱스 사용 불가	
+		System.out.println(set);
+		
+		Student st1 = new Student(1, "성구");
+		Student st2 = new Student(1, "한구");
+		
+		int i = st1.compareTo(st2);
+		
+		System.out.println(i);
+		
+		
 	}
 }
