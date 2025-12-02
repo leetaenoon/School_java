@@ -19,6 +19,14 @@ public class Test {
 		// - putAll(Map m):void
 		// - putIfAbsent(K key, V value):V
 		
+//		Map<Integer, Student> map = new HashMap<>();
+//		System.out.println(map);
+////		System.out.println(map.put(2, "lee")); //널 값이 찍힘
+//		map.put(2, new Student(111,"lee"));
+//		map.put(3, new Student(222, "koo"));
+//		map.put(4, new Student(333, "sung"));
+//		System.out.println(map);
+		
 		// - Map<Integer, Sting> 경우
 //		Map<Integer, String> map = new HashMap<>(); 
 //		map.put(2, "나나나"); map.put(1, "가가가"); map.put(3, "다다다");
@@ -38,6 +46,19 @@ public class Test {
 //		System.out.println(map);
 //		map.put("가가가", 5);  // 키 중복 불가
 //		System.out.println(map);
+		
+//		Map<Integer, String> map = new HashMap<>();
+//		map.put(2, "lee");
+//		map.put(1, "sung");
+//		map.put(3, "koo");
+//		System.out.println(map);
+//		
+//		map.replace(2, "kkkkk","leeee");
+//		
+//		System.out.println(map);
+		
+		
+		
 		
 		// - Map<Integer, Student> 경우
 //		Map<Integer, Student> map = new HashMap<>(); 
@@ -100,6 +121,11 @@ public class Test {
 		// - remove(Object key, Object value):boolean
 		// - clear():void
 		
+		
+		
+		
+		
+		
 		// - Map<Integer, Student> 경우
 //		Map<Integer, Student> map = new HashMap<>();
 //		map.put(1, new Student(111, "성구")); 
@@ -121,6 +147,18 @@ public class Test {
 		// - containsValue(Object value): boolean
 		// - size():int, isEmpty():boolean
 		
+		
+//		Map<Integer, String> map = new HashMap<>();
+//		map.put(2, "lee");
+//		map.put(1, "sung");
+//		map.put(3, "koo");
+//		System.out.println(map);
+//		
+//		String st = map.get(2);
+//		System.out.println(st);
+//		System.out.println(map.size());
+		
+		
 		// - Map<Integer, String> 경우
 //		Map<Integer, String> map = new HashMap<>();
 //		map.put(2, "나나나"); map.put(1, "가가가"); map.put(3, "다다다");
@@ -136,7 +174,47 @@ public class Test {
 		// - keySet():Set<K>
 		// - entrySet():Set<Map.Entry<K,V>>
 		// - values():Collection<V>
-	
+		
+//		Map<Integer, String> map = new HashMap<>();
+//		map.put(2, "lee");
+//		map.put(1, "sung");
+//		map.put(3, "koo");
+//		System.out.println(map);
+//		
+//		Set<Integer> set = map.keySet();
+//		System.out.println(set);
+//		
+//		for(Integer key : set) {
+//			String value = map.get(key);
+//			System.out.println(key + " " + value);
+//		}
+		
+//		Map<Integer, String> map = new HashMap<>();
+//		map.put(2, "lee");
+//		map.put(1, "sung");
+//		map.put(3, "koo");
+//		System.out.println(map);
+//		
+//		Collection<String> col = map.values();
+//		System.out.println(col);
+//		
+//		for(String val : col) {
+//			System.out.println(val);
+//		}
+		
+		Map<Integer, String> map = new HashMap<>();
+		map.put(2, "lee");
+		map.put(1, "sung");
+		map.put(3, "koo");
+		System.out.println(map);
+		
+		Set<Map.Entry<Integer, String>> entry = map.entrySet();
+		System.out.println(entry);
+		
+		for(Map.Entry<Integer, String> ele : entry) {
+			System.out.println(ele);
+		}
+
 		// - Map<Integer, String> 경우
 //		Map<Integer, String> map = new HashMap<>();
 //		map.put(2, "나나나"); map.put(1, "가가가"); map.put(3, "다다다");
