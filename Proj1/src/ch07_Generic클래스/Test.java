@@ -28,7 +28,7 @@ public class Test {
 //		box.setItem(new Apple());
 //		Object obj = box.getItem();
 //		System.out.println(obj); // 캐스팅 필요 - Apple의 name 필드 이용하기 위해
-		
+
         // 제너릭 클래스 Box1 예제 - 제너릭 매개변수 1개 (Apple)		
 //		Box1<Apple> appleBox = new Box1<>();
 //		appleBox.setItem(new Apple());

@@ -121,11 +121,6 @@ public class Test {
 		// - remove(Object key, Object value):boolean
 		// - clear():void
 		
-		
-		
-		
-		
-		
 		// - Map<Integer, Student> 경우
 //		Map<Integer, Student> map = new HashMap<>();
 //		map.put(1, new Student(111, "성구")); 
@@ -175,6 +170,27 @@ public class Test {
 		// - entrySet():Set<Map.Entry<K,V>>
 		// - values():Collection<V>
 		
+		// - Map<Integer, Student> 경우
+		Map<Integer, Student> map = new HashMap<>();
+		map.put(1, new Student(111, "성구")); 
+		map.put(2, new Student(222, "경미")); 
+		map.put(3, new Student(333, "지은"));
+		System.out.println(map);
+		
+		Set<Map.Entry<Integer, Student>> entry_set = map.entrySet();
+		System.out.println(entry_set);
+		
+		for(Map.Entry<Integer, Student> entry : entry_set) {
+			int key = entry.getKey();
+			Student st = entry.getValue();
+			String name = st.getName();
+			
+			System.out.println(key + name);
+			
+//			System.out.println(st);
+		}
+		
+		
 //		Map<Integer, String> map = new HashMap<>();
 //		map.put(2, "lee");
 //		map.put(1, "sung");
@@ -202,18 +218,18 @@ public class Test {
 //			System.out.println(val);
 //		}
 		
-		Map<Integer, String> map = new HashMap<>();
-		map.put(2, "lee");
-		map.put(1, "sung");
-		map.put(3, "koo");
-		System.out.println(map);
-		
-		Set<Map.Entry<Integer, String>> entry = map.entrySet();
-		System.out.println(entry);
-		
-		for(Map.Entry<Integer, String> ele : entry) {
-			System.out.println(ele);
-		}
+//		Map<Integer, String> map = new HashMap<>();
+//		map.put(2, "lee");
+//		map.put(1, "sung");
+//		map.put(3, "koo");
+//		System.out.println(map);
+//		
+//		Set<Map.Entry<Integer, String>> entry = map.entrySet();
+//		System.out.println(entry);
+//		
+//		for(Map.Entry<Integer, String> ele : entry) {
+//			System.out.println(ele);
+//		}
 
 		// - Map<Integer, String> 경우
 //		Map<Integer, String> map = new HashMap<>();

@@ -27,7 +27,7 @@ import ch08_Collection프레임워크.common.Student;
 public class Test {
 
 	public static void main(String[] args) {	
-		// List, Set, Map 정적 메소드 (불변 구조)
+		// List, Set, Map 정적 메소드 (불변 구조) - 이건 패스
 		// - of(E e1, E e2, ...): List<E>
 		// - of(E e1, E e2, ...): Set<E> 
 		// - of(K k1, V v1, K k2, V v2, ...): Map<K, V>
@@ -84,13 +84,28 @@ public class Test {
 //		c.add("kkk");
 //		System.out.println(c);
 		
-		// Collections 정적 메소드
+		// Collections 정적 메소드 - 이거 수업함
 		// - sort(List list): void
 		// - reverse(List list): void
 		// - shuffle(List list): void
 		// - max(Collection c): T
 		// - min(Collection c): T
 		// - frequency(Collection c, Object o): int
+		
+		
+		List<String> list = new ArrayList<>();
+		list.add("sung");
+		list.add("aaaaaa");
+		list.add("kkkkkk");
+		list.add("hhhhhh");
+		Collections.sort(list);
+		
+		System.out.println(list);
+		
+		String max = Collections.max(list);
+		System.out.println(max);
+		
+		
 		
 //		List<String> a = List.of("성구", "현우", "지은");       // 불변 리스트
 //		List<String> b = new ArrayList<>(a);               // 가변 복사본
